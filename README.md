@@ -1,2 +1,24 @@
 # Address-Example
-JSON Tutorial to display address
+# JSON Tutorial to display address using JavaScript
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON Object Creation in JavaScript</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = '{"name":"Stacy Johnson","street":"Oslo West 18","phone":"623 1234567"}';
+
+var obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML =
+obj.name + "<br>" +
+obj.street + "<br>" +
+obj.phone;
+</script>
+
+</body>
+</html>
